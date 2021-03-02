@@ -66,11 +66,11 @@ if Var.PRIVATE_GROUP_ID is not None:
         if event.is_private:
             if not pmpermit_sql.is_approved(chat.id):
                 if not chat.id in PM_WARNS:
-                    pmpermit_sql.approve(chat.id, "outgoing")
-                    bruh = "**This user has been auto-approved.. Reason: Outgoing messages..**"
-                    rko = await borg.send_message(event.chat_id, bruh)
-                    await asyncio.sleep(4)
-                    await rko.delete()
+                     pmpermit_sql.approve(chat.id, "outgoing")
+                 #   bruh = "**This user has been auto-approved.. Reason: Outgoing messages..**"
+                 #   rko = await borg.send_message(event.chat_id, bruh)
+                 #   await asyncio.sleep(4)
+                 #   await rko.delete()
 
 
     @command(pattern="^.block ?(.*)")
