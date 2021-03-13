@@ -44,7 +44,6 @@ lxml
 oauth2client
 opencv-python--headless
 patool
-psycopg2
 psutil
 psycopg2-binary
 pygame
