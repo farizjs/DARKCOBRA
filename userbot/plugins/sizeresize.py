@@ -40,7 +40,7 @@ async def __(event):
     img=shvm.resize((int(shi),int(vam)))
     #await event.edit(f"Dimensions Of Image are {shi} by {vam}")
     img.save("sh1vam.png", format="PNG", optimize=True)
-    await event.client.send_file(event.chat_id, "sh1vam.png", force_document=True, reply_to=event.reply_to_msg_id)
+    #await event.client.send_file(event.chat_id, "sh1vam.png", force_document=True, reply_to=event.reply_to_msg_id)
     await event.client.send_file(event.chat_id, "sh1vam.png", force_document=False, reply_to=event.reply_to_msg_id)
     os.remove(download)
     os.remove("sh1vam.png")
